@@ -5,9 +5,6 @@ export default function HeroSection({ onOpenWaitlist, onExplore }) {
   const [resonance, setResonance] = useState(98);
   const [isResonanceHovered, setIsResonanceHovered] = useState(false);
 
-  const ANANYA_IMG = "//ananya.png";
-  const ADITYA_IMG = "//aditya.png";
-
   return (
     <div className="relative pt-space-lg lg:pt-12 max-w-7xl mx-auto px-4 sm:px-8" id="home">
       <div className="lg:grid lg:grid-cols-12 lg:gap-12 lg:items-center">
@@ -174,16 +171,8 @@ export default function HeroSection({ onOpenWaitlist, onExplore }) {
               <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-pink-500 opacity-90"></div>
               
               <div className="flex items-center gap-4">
-                <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden shrink-0 shadow-sm ring-2 ring-cyan-400/50">
-                  <img
-                    className="w-full h-full object-cover"
-                    alt="Aditya portrait"
-                    src={ADITYA_IMG}
-                    onError={(e) => {
-                      e.target.onerror = null;
-                      e.target.src = "https://lh3.googleusercontent.com/aida-public/AB6AXuCYDortEtDT_dBUgzmC0Dog4IxyqCQw6I7_SbK2VbyM0OEevdkCjckLTMR6pB4fIrm6b5Re37UAGE_BSkEX-fIZUj6zpOL8HETX2C2h3Wx8yk5H1ZQdVnrIMCqlMIsj_eNbLIjOtLrl2WqMDo6q_pG9UQqjmRn1KOPEfT20H5UeHThKTuggoYc4DHQuWOfedFJ7hZkbdLeoG6TrDit-gn2W9xQcRTfmcItaSIaPWfbNhPt9cR_S0_Cx_g";
-                    }}
-                  />
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden shrink-0 shadow-sm ring-2 ring-cyan-400/50 bg-gradient-to-br from-cyan-50 to-blue-100 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-[32px] sm:text-[38px] text-cyan-500">person</span>
                   <div className="absolute bottom-0 right-0 w-5 h-5 bg-cyan-500 rounded-full flex items-center justify-center ring-2 ring-white">
                     <span className="material-symbols-outlined text-[12px] text-white font-bold">verified</span>
                   </div>
